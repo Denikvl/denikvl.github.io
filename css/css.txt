@@ -1,0 +1,126 @@
+.form-content.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+form#contact_form {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 16px 32px 0;
+    transition: all .3s ease;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cf_input {
+    border-radius: 6px;
+    border: none;
+    min-height: 40px;
+    margin-bottom: 24px;
+    padding: 0 16px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    box-shadow: inset 0 1px 3px 1px rgba(203, 202, 202, 0.7);
+    width: 100%;
+}
+
+h2.cf_title {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+textarea.cf_input {
+    padding: 12px 16px;
+    resize: none;
+    font-size: 16px;
+}
+
+button.cf_submit {
+    background-color: #e55195;
+    color: #fff;
+    border: none;
+    height: 40px;
+    border-radius: 6px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+button.cf_submit:hover {
+    opacity: .7;
+}
+
+
+* {
+    outline-color: #e55195;
+}
+
+button#cboxClose {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    bottom: auto;
+    color: #e55195;
+    font-size: 40px;
+    outline: none;
+    transition: all .3s ease;
+    z-index: 1;
+}
+
+button#cboxClose:hover {
+    opacity: .7;
+}
+
+
+form#contact_form.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form-status__title {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.form-content {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+div#colorbox {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    main.about-content {
+        padding: 80px 40px 0;
+        font-size: 16px;
+    }
+
+    form#contact_form {
+      max-width: 288px;
+      padding: 16px 16px 0;
+    }
+}

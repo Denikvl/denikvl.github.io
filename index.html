@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0042)https://www.project-mu.co.jp/en/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="keywords" content="Project mu,brake,pad,rotor,caliper,race,PMU">
+<meta name="description" content="A website of the brakes maker project mu.">
+<link rel="subsection" href="https://www.project-mu.co.jp/images/favicon.ico">
+<link rel="stylesheet" href="./css/import.css" type="text/css" media="screen,print">
+<link rel="stylesheet" href="./css/lightbox.css" type="text/css" media="screen">
+<!--モーダルボックス用ここから-->
+<link type="text/css" media="screen" rel="stylesheet" href="./css/colorbox.css">  
+
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/jquery.colorbox.js"></script>
+<!-- <link type="text/css" media="screen" rel="stylesheet" href="./css/colorbox-custom.css">   -->
+<!--[if IE]>  
+    <link type="text/css" media="screen" rel="stylesheet" href="colorbox-custom-ie.css" title="example" />  
+<![endif]-->  
+
+<script type="text/javascript">  
+    $(document).ready(function(){  
+        // $("a[rel='colorbox']").colorbox();
+		// $.fn.colorbox.settings.bgOpacity = "0.5";  
+        // $(".cpModal").colorbox();  
+        // $("#flash").colorbox({contentAjax:"../content/flash.html"});  
+        // $(".inline1").colorbox({width:"940px", inline:true, href:"#inline_1"});
+		// $(".inline2").colorbox({width:"800px", inline:true, href:"#inline_2"});
+		// $(".inline3").colorbox({width:"800px", inline:true, href:"#inline_3"});
+		// $(".inline4").colorbox({width:"800px", inline:true, href:"#inline_4"});
+		// $(".inline5").colorbox({width:"800px", inline:true, href:"#inline_5"});
+		// $(".inline6").colorbox({width:"800px", inline:true, href:"#inline_6"});
+        // $(".inline7").colorbox({width:"800px", inline:true, href:"#inline_7"});
+        $(".cta__button").colorbox({
+            inline:true,
+            close: "&times;"
+        });  
+        //form submission
+        $('#contact_form').submit(function(e){
+        e.preventDefault();
+        var payload = $(this).serialize();
+        $.post('/mail/sendmail.php', payload).then(function(res){
+            console.log(res);
+            var data = JSON.parse(res);
+            $('.form-content').addClass('hidden');
+            $('.form-status__title').text(data.message);
+        }, function(err){
+            console.log(err);
+        });
+        });  
+    });  
+</script>
+<!--モーダルボックス用ここまで-->
+<title>Project Mu Co., Ltd.</title>
+
+
+
+
+<!-- Google Tag Manager -->
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NSNS4HN');</script>
+        <!-- End Google Tag Manager -->
+        
+</head>
+
+<body style="background: none;"> 
+    
+    
+    <!-- Google Tag Manager (noscript) -->
+
+
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSNS4HN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+
+
+        <div style="display:none; position:relative;">
+                <form id="contact_form" class="cf" method="post">
+                  <div class="form-content">
+                    <h2 class="cf_title">Свяжитесь с нами</h2>
+                    <input type="text" name="name" class="cf_input" placeholder="Имя" required>
+                    <input type="email" name="email" class="cf_input" placeholder="Email" required>
+                    <input type="text" name="subj" class="cf_input" placeholder="Тема сообщения" required>
+                    <textarea name="message" rows="8" cols="80" class="cf_input" placeholder="Текст сообщения" required></textarea>
+                    <button type="submit" class="cf_submit">Отправить</button>
+                  </div>
+              
+                  <h3 class="form-status__title"></h3>
+              
+                </form>
+              </div>
+<div id="top_header_menu_wrapper">
+    <div id="top_header_menu" class="clearfix"><!-- #BeginLibraryItem "/Library/head_menu_en.lbi" --><div id="lang_area" class="clearfix">
+        
+        
+        <!-- верхнее меню -->
+
+
+
+
+
+        
+        
+        
+        
+        
+        <!-- <ul>
+
+				<li id="lang_asia"><a href="http://www.pmuasia.com/" target="_blank">For Asia market</a></li>          
+				<li id="lang_au"><a href="http://www.project-mu.com.au/en/" target="_blank">For Australia market</a></li>
+                <li id="lang_usa"><a href="https://www.project-mu.co.jp/usa/index.html">For USA market</a></li>
+                <li id="lang_en"><a href="https://www.project-mu.co.jp/en/index.html">ENGLISH</a></li>
+                <li>/</li>
+                <li id="lang_ja"><a href="https://www.project-mu.co.jp/ja/index.html">日本語</a></li>
+			</ul>
+		</div>
+        <div id="header_sub_menu" class="clearfix">
+        	<ul>
+              	<li><a href="https://www.project-mu.co.jp/en/company.html">COMPANY</a></li>
+        	</ul> -->
+        </div><!-- #EndLibraryItem --></div>
+<!-- </div>
+
+<div id="top_menu_wrapper" class="clearfix">
+    <div id="top_menu" class="clearfix">
+        <ul>
+            <li><a href="https://www.project-mu.co.jp/en/products/index.html"><img src="./img/top_menu_title_product_en.gif" alt="PRODUCT"></a></li>
+            <li><a href="https://www.project-mu.co.jp/en/matching.html"><img src="./img/top_menu_title_matching_en.gif" alt="MATCHING"></a></li>
+            <li><a href="https://www.project-mu.co.jp/en/support.html"><img src="./img/top_menu_title_support_en.gif" alt="SUPPORT"></a></li>
+            <li style="background:none; margin-right:0; padding-right:0;"><a href="https://www.project-mu.co.jp/en/distributor.html"><img src="./img/top_menu_title_distributor_en.gif" alt="DISTRIBUTOR"></a></li>
+        </ul>
+    </div>
+</div> -->
+<div id="wrapper_top">
+	<div id="contents_wrapper" class="clearfix">
+		<div id="top_main_menu">
+        	<ul>
+                <li class="cta"><img class="logo_jp" src="./img/top_product_logo.jpg" alt="ブレーキパッド">
+                <img class="logo1000" src="./img/logo1000.png" alt="">
+                <span class="descr">Страница на русском языке находится в разработке</span>
+                <a class="cta__button" href="#contact_form">
+                    Написать нам
+                </a>
+                </li>
+
+                <li><a class="" href="https://www.project-mu.co.jp/en/products/index.html" target="_blank"> <img src="./img/top_product_pad_en.jpg" alt="BRAKE PAD" width="220" height="250" ></a></li>
+                <li><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_rotor" target="_blank"><img src="./img/top_product_rotor_en.jpg" alt="BRAKE ROTOR" width="220" height="250"></a></li>
+                <li class="non_padding"><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_cali" target="_blank"><img src="./img/top_product_caliper_en.jpg" alt="BRAKE CALIPER" width="220" height="250"></a></li>
+                <li><a href="https://www.project-mu.co.jp/en/products/other_brakeline.html" target="_blank"><img src="./img/top_product_line_en.jpg" alt="BRAKE LINE" width="220" height="250"></a></li>
+                <li><a href="https://www.project-mu.co.jp/en/products/other_fluid.html" target="_blank"><img src="./img/top_product_fluid_en.jpg" alt="BRAKE FLUID" width="220" height="250"></a></li>
+                <li><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_acce" target="_blank"><img src="./img/top_product_acce_en.jpg" alt="ACCESSORIES" width="220" height="250"></a></li>
+                <li class="non_padding"><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_powerup" target="_blank"><img src="./img/top_product_powerup_en.jpg" alt="POWER UP PARTS" width="220" height="250"></a></li>
+            </ul>
+        </div>
+        <!--モーダルボックスの内容ここから-->
+        <div class="hidden">
+   	  		<div id="inline_1" class="clearfix" style="padding:30px; background:#ffffff;"><!--ブレーキパッド用-->
+            	<h2>BRAKE PAD LINEUP</h2>
+                <!--純正交換-->
+                <div class="mordalbox_pad_category_set">
+                	<h3><img src="./img/mordalbox_title_genuin_en.gif" target="_blank" alt="GENUINE TYPE"></h3>
+                    <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_bestop.html"><img src="./img/thumb_pindex_pad_bestop.gif" alt="BESTOP"><br>BESTOP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mordalbox_pad_category_set">
+                    <!--ストリート-->
+                    <h3><img src="./img/mordalbox_title_street.gif" alt="STREET"></h3>
+                    <!--NS-->
+                    <div class="mordalbox_category_sub_wrapper">
+                        <h4><img src="./img/product_index_cat_sub_ns.gif" alt="NS SERIES"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_nszero.html"><img src="./img/thumb_pindex_pad_nszero.gif" alt="NS-ZERO"><br>NS-ZERO</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_ns.html"><img src="./img/thumb_pindex_pad_ns.gif" alt="TYPE NS"><br>TYPE NS</a></li>
+                    	</ul>
+                    </div>
+                    <!--BOOM-->
+                    <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                    	<h4><img src="./img/product_index_cat_sub_boom_en.gif" alt="BOOM SERIES"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_boom_wagon.html"><img src="./img/thumb_pindex_pad_wagon.gif" alt="BOOM WAGON"><br>BOOM WAGON</a></li>
+                    	</ul>
+                    </div>
+                    <!--ECO-->
+                    <div class="mordalbox_category_sub_wrapper">
+                    	<h4><img src="./img/product_index_cat_sub_eco_en.gif" alt="ECO TYPE"></h4>
+                    	<ul class="mordalbox_product_list">
+                    	<li><a href="https://www.project-mu.co.jp/en/products/pad_hv.html"><img src="./img/thumb_pindex_pad_hv.gif" alt="TYPE HV"><br>TYPE HV</a></li>
+                    	</ul>
+                    </div>
+                    <!--M SPEC-->
+                    <div class="mordalbox_category_sub_wrapper">
+                    	<h4>&nbsp;</h4>
+                    	<ul>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_mspec.html"><img src="./img/thumb_pindex_pad_mspec.gif" alt="M SPEC"><br>M SPEC</a></li>
+                        </ul>
+                    </div>
+                    <!--Coμ-->
+                    <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                    	<h4><img src="./img/product_index_cat_sub_comyu_en.gif" alt="Coμ SERIES"></h4>
+                    	<ul>
+                        	<li><a href="https://www.project-mu.co.jp/en/products/pad_comyu.html"><img src="./img/thumb_pindex_pad_comyu.gif" alt="Coμ Street"><br>Coμ STREET</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--ストリートスポーツ-->
+                <div class="mordalbox_pad_category_set">
+                	<h3><img src="./img/mordalbox_title_streetsports.gif" alt="STREET SPORTS"></h3>
+                    <!--B SPEC-->
+                    <div class="mordalbox_category_sub_wrapper">
+                    	<h4>&nbsp;</h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_bspec.html"><img src="./img/thumb_pindex_pad_bspec.gif" alt="B SPEC"><br>B SPEC</a></li>
+                        </ul>
+                    </div>
+                    <!--HC-->
+                    <div class="mordalbox_category_sub_wrapper">
+                    	<h4><img src="./img/product_index_cat_sub_hc.gif" alt="HC SERIES"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_hccs.html"><img src="./img/thumb_pindex_pad_hccs.gif" alt="TYPE HC-CS"><br>TYPE HC-CS</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_hcplus.html"><img src="./img/thumb_pindex_pad_hcp.gif" alt="TYPE HC+"><br>TYPE HC+</a></li>
+                        </ul>
+                    </div>
+                    <!--Coμ-->
+                    <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                    	<h4><img src="./img/product_index_cat_sub_comyu_en.gif" alt="Coμ SERIES"></h4>
+                    	<ul>
+                        	<li><a href="https://www.project-mu.co.jp/en/products/pad_comyu_sports.html"><img src="./img/thumb_pindex_pad_comusports.gif" alt="Coμ SPORTS"><br>Coμ SPORTS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--コンペティション-->
+                <div class="mordalbox_pad_category_set" style="float: left;">
+                	<h3><img src="./img/mordalbox_title_drift.gif" alt="COMPETITION"></h3>
+                    <div class="mordalbox_category_sub_wrapper">
+                    	<h4>&nbsp;</h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_d1spec.html"><img src="./img/thumb_pindex_pad_d1.gif" alt="D1 spec"><br>D1 spec</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_d1specex.html"><img src="./img/thumb_pindex_pad_d1ex.gif" alt="D1 spec EXTREME"><br>D1 spec EXTREME</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_compb_gym.html"><img src="./img/thumb_pindex_pad_gym.gif" alt="COMP-B for GYMKHANA"><br>COMP-B for GYMKHANA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--シュー-->
+                <div class="mordalbox_pad_category_set" style="float:left;">
+                	<h3><img src="./img/mordalbox_title_shoe.gif" alt="SHOE"></h3>
+                    <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                    	<h4>&nbsp;</h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/shoe_rear.html"><img src="./img/thumb_pindex_shoe.gif" alt="SPORTS REAR SHOE"><br>SPORTS REAR SHOE</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/shoe_inner.html"><img src="./img/thumb_pindex_inner_shoe.gif" alt="SPORTS INNER SHOE"><br>SPORTS INNER SHOE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+                
+                <!--インポート-->
+                <div class="mordalbox_pad_category_set" style="float:left;">
+                	<h3><img src="./img/mordalbox_title_importcar.gif" alt="for IMPORT CARS"></h3>
+                    <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                    	<h4><img src="./img/product_index_cat_sub_euro.gif" alt="EURO SERIES"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_euroeco.html"><img src="./img/thumb_pindex_pad_euroeco.gif" alt="EURO ECO"><br>EURO ECO</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_eurosports.html"><img src="./img/thumb_pindex_pad_eurosports.gif" alt="EURO SPORTS"><br>EURO SPORTS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                                
+                <!--レーシング-->
+                <div class="mordalbox_pad_category_set" style="float:left;">
+                	<h3><img src="./img/mordalbox_title_circuitrace.gif" alt="RACING"></h3>
+                    <!--RACING-->
+                    <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                    	<h4><img src="./img/product_index_cat_sub_racing.gif" alt="RACING SERIES"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_n1.html"><img src="./img/thumb_pindex_pad_n1.gif" alt="RACING-N1"><br>RACING-N1</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_n1ffrear.html"><img src="./img/thumb_pindex_pad_n1ffrear.gif" alt="RACING-N1 FFR"><br>RACING-N1 FFR</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_nplus.html"><img src="./img/thumb_pindex_pad_nplus.gif" alt="RACING-N+"><br>RACING-N+</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_777.html"><img src="./img/thumb_pindex_pad_777.gif" alt="RACING777"><br>RACING777</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_999.html"><img src="./img/thumb_pindex_pad_999.gif" alt="RACING999"><br>RACING999</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_sin.html"><img src="./img/thumb_pindex_pad_sin.gif" alt="RACING SINTERED"><br>RACING SINTERED</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--レーシングエキスポート-->
+                <div class="mordalbox_pad_category_set" style="float:left;">
+                	<h3><img src="./img/mordalbox_title_circuitrace_ex_en.gif" alt="RACING (Export only model"></h3>
+                	<div class="mordalbox_category_sub_wrapper">
+                    	<h4 style="height:11px;">&nbsp;</h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_clubracer.html"><img src="./img/thumb_pindex_pad_clubracer.gif" alt="CLUB RACER RC09"><br>CLUB RACER RC09</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+                
+                <!--カート用-->
+				<div class="mordalbox_pad_category_set" style="float:left;">
+                	<h3><img src="./img/mordalbox_title_kart_en.gif" alt="for KART"></h3>
+                    <div class="mordalbox_category_sub_wrapper">
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_kart_std.html"><img src="./img/thumb_pindex_pad_kart_std.gif" alt="STD"><br>STD</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_kart_sts.html"><img src="./img/thumb_pindex_pad_kart_sts.gif" alt="STS"><br>STS</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_kart_cch.html"><img src="./img/thumb_pindex_pad_kart_cch.gif" alt="CCH"><br>CCH</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_kart_ccs.html"><img src="./img/thumb_pindex_pad_kart_ccs.gif" alt="CCS"><br>CCS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--バイク用-->
+                <div class="mordalbox_pad_category_set" style="float:left;">
+                	<h3><img src="./img/mordalbox_title_bike_en.gif" alt="for BIKE"></h3>
+                    <div class="mordalbox_category_sub_wrapper">
+                        <ul class="mordalbox_product_list">
+                            <li><a href="http://www.nproject-jp.com/myu-main.html"><img src="./img/thumb_pindex_pad_bike.gif" alt="BIKE/Motor Cycle"><br>BIKE/Motor Cycle</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--インポートキャリパー用-->
+                <div class="mordalbox_pad_category_set" style="float:left;">
+                	<h3><img src="./img/mordalbox_title_importcaliper_en.gif" alt="for IMPORT CALIPER"></h3>
+                    <div class="mordalbox_category_sub_wrapper">
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/pad_import.html"><img src="./img/thumb_pindex_pad_importcaliper.gif" alt="alcon, AP RACING and brembo..."><br>alcon,<br>AP RACING and brembo...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+                
+            </div>
+            
+            
+            
+          <div id="inline_2" class="clearfix" style="padding:30px; background:#ffffff;"><!--ブレーキローター用-->
+            	<h2>BRAKE ROTOR LINEUP</h2>
+                	<div class="mordalbox_category_sub_wrapper" style="border:none;">
+                    	<h4><img src="./img/product_index_cat_sub_scr_2p_en.gif" alt="SCR SERIES 2 PIECE TYPE"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/rotor_scrgt.html"><img src="./img/thumb_pindex_rotor_scrgt.gif"><br>SCR-GT</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/rotor_scrpro.html"><img src="./img/thumb_pindex_rotor_scrpro.gif"><br>SCR-PRO</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/rotor_racing.html"><img src="./img/thumb_pindex_rotor_racingdisc.gif"><br>RACING DISC ROTOR</a></li>
+                        </ul>
+                	</div>
+                    <div class="mordalbox_category_sub_wrapper" style="margin-bottom:0;">
+                    	<h4><img src="./img/product_index_cat_sub_scr_1p_en.gif" alt="SCR SERIES 1 PIECE TYPE"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/rotor_scrpp6.html"><img src="./img/thumb_pindex_rotor_pp6.gif"><br>SCR Pure Plus6</a></li>
+                            <li><a href="https://www.project-mu.co.jp/en/products/rotor_scr.html"><img src="./img/thumb_pindex_rotor_scr.gif"><br>SCR</a></li>
+                        </ul>
+                	</div>
+                    <div class="mordalbox_category_sub_wrapper">
+                    	<h4><img src="./img/product_index_cat_sub_rotor_euro.gif" alt="EURO SERIES"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/rotor_eurosports.html"><img src="./img/thumb_pindex_rotor_eurosports.gif"><br>EURO SPORTS ROTOR<br>（for IMPORT CARS）</a></li>
+                        </ul>
+                	</div>
+                    <div class="mordalbox_category_sub_wrapper">
+                    	<h4><img src="./img/product_index_cat_sub_rotor_club.gif" alt="CLUB RACER SERIES"></h4>
+                        <ul class="mordalbox_product_list">
+                            <li><a href="https://www.project-mu.co.jp/en/products/rotor_clubracer.html"><img src="./img/thumb_pindex_rotor_clubracer.gif"><br>CLUB RACER 1Piece Disc<br>（EXPORT ONLY）</a></li>
+                        </ul>
+                	</div>
+            </div>
+          <div id="inline_3" class="clearfix" style="padding:30px; background:#ffffff;"><!--キャリパー用-->
+            	<h2>BRAKE CALIPER LINEUP</h2>
+                <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                	<h4><img src="./img/product_index_cat_sub_cali_racing.gif" alt="RACING CALIPER SERIES"></h4>
+                    <ul class="mordalbox_product_list">
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_r6.html"><img src="./img/thumb_pindex_cali_r6_en.gif"><br>RACING CALIPER 6Pistons</a></li>
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_r4x4.html"><img src="./img/thumb_pindex_cali_r4x4_en.gif"><br>RACING CALIPER 4Pistons×4Pads</a></li>
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_f2rear.html"><img src="./img/thumb_pindex_cali_r2rear.gif"><br>RACING CALIPER 2Pistons REAR</a></li>
+                    </ul> 
+                </div>
+                <div class="mordalbox_category_sub_wrapper" style="border:none;">
+                	<h4><img src="./img/product_index_cat_sub_cali_forged.gif" alt="FORGED SPORTS CALIPER SERIES"></h4>
+                    <ul class="mordalbox_product_list">
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_f6slim.html"><img src="./img/thumb_pindex_cali_f6slim.gif"><br>FORGED SPORTS CALIPER 6Pistons SLIM</a></li>
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_f4x4.html"><img src="./img/thumb_pindex_cali_f4x4_en.gif"><br>FORGED SPORTS CALIPER 4Pistons×4Pads</a></li>
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_f4x4slim.html"><img src="./img/thumb_pindex_cali_f4x4slim_en.gif"><br>FORGED SPORTS CALIPER 4Pistons×4Pads SLIM</a></li>
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_f4slim.html"><img src="./img/thumb_pindex_cali_f4slim_en.gif"><br>FORGED SPORTS CALIPER 4Pistons SLIM</a></li>
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_f4mini.html"><img src="./img/thumb_pindex_cali_f4mini.gif"><br>FORGED SPORTS CALIPER 4Pistons MINI</a></li>
+                        <li><a href="https://www.project-mu.co.jp/en/products/cali_f4x4side.html"><img src="./img/thumb_pindex_cali_side.gif"><br>FORGED SPORTS CALIPER 4Pistons×4Pads SIDE-B</a></li>
+                    </ul> 
+                </div>
+          </div>
+          <div id="inline_4" class="clearfix" style="padding:30px; background:#ffffff;"><!--ブレーキライン用-->
+            </div>
+          <div id="inline_5" class="clearfix" style="padding:30px; background:#ffffff;"><!--ブレーキフルード用-->
+            	<h2>BRAKE FLUID LINEUP</h2>
+                <ul class="mordalbox_product_list">
+					<li><a href="https://www.project-mu.co.jp/en/products/other_fluid.html"><img src="./img/thumb_pindex_other_fluid.gif"><br>G/FOUR335</a></li>
+                </ul>
+            </div>
+          <div id="inline_6" class="clearfix" style="padding:30px; background:#ffffff;"><!--アクセサリー用-->
+            	<h2>ACCESSORIES LINEUP</h2>
+                <ul class="mordalbox_product_list">
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_wappen.html"><img src="./img/thumb_pindex_other_wear.gif"><br>ORIGINAL PATCH</a></li>
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_sticker.html"><img src="./img/thumb_pindex_other_stick.gif"><br>ORIGINAL STICKER</a></li>
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_tankcover.html"><img src="./img/thumb_pindex_other_tankcover.gif"><br>RESERVOIR TANK COVER </a></li>
+				</ul>
+            </div>
+          <div id="inline_7" class="clearfix" style="padding:30px; background:#ffffff;"><!--パワーアップパーツ用-->
+            <h2>POWER UP PARTS LINEUP</h2>
+                <ul class="mordalbox_product_list">
+                	<li><a href="https://www.project-mu.co.jp/en/products/other_pistonkit.html"><img src="./img/thumb_pindex_mainte_piston.gif"><br>UPGRADE PISTON KIT</a></li>
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_shim.html"><img src="./img/thumb_pindex_mainte_sim.gif"><br>BRAKE PAD SHIM</a></li>
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_oil_engine.html"><img src="./img/thumb_pindex_oil_e.gif"><br>Hyper engine OIL</a></li>
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_oil_gear.html"><img src="./img/thumb_pindex_oil_g.gif"><br>Hyper gear OIL</a></li>
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_nut_lock.html"><img src="./img/thumb_pindex_other_nut_l.gif"><br>SUPER LOCK NUT7</a></li>
+                    <li><a href="https://www.project-mu.co.jp/en/products/other_nut_racing.html"><img src="./img/thumb_pindex_other_nut_r.gif"><br>RACING FLOATING NUT</a></li>
+				</ul>
+          </div>
+		</div>
+
+      <!--モーダルボックスの内容ここまで-->
+		<div class="clear"></div>
+		<div id="contents_left">
+        	<!-- インフォメーション
+        	<h2><img src="../images/top_title_product_info.gif" alt="INFORMATION" /></h2>
+            <ul>
+                <li class="new"><a href="products/rotor_scrpro.html">New product「SCR-PRO for NISSAN LEAF」</a></li>
+              <li class="new" style="color:#fff;">New product「<a href="products/pad_rsf01a.html" style="text-decoration:underline;">RSF 01A</a>」「<a href="products/pad_rsr02.html" style="text-decoration:underline;">RSR 02</a>」</a></li>
+                <li class="new"><a href="products/pad_d1specr.html">New product「D1 spec”R”」</a></li>
+                <li><a href="../campaign/2013/13fr_set_cam.pdf" target="_blank">Mar. 15 ～ June. 15 BRAKE PADS &amp; SHOE Front + Rear set Campaign!（PDF）</a></li>
+              <li style="color:#fff;">New items NS400 and HC+800 is available on USA</li>
+                <li><a href="../campaign/2012/12fr_set_cam.pdf">Sep. 15 ～ Dec. 15 FRONT + REAR set Campaign!（PDF）</a></li>
+              <li><a href="products/other_oilfilter.html">New product「MAGNETIC OIL FILTER」</a></li>
+                <li><a href="products/other_drainbolt.html">New product「MAGNETIC DRAIN BOLT」</a></li>
+                <li><a href="products/other_hypernut.html">New product「HYPER NUT」</a></li>
+                <li><a href="products/other_tissuecover.html">New product「TISSUE COVER」</a></li>
+                  <li><a href="../ja/pdf/1203_86_brz.pdf">New products for TOYOTA 86 & SUBARU BRZ（PDF）</a></li>
+                  <li><a href="../campaign/2012/12padset_cam.pdf">Mar. 15 ～ June. 15 BRAKE PADS Campaign!（PDF）</a></li>
+                  <li><a href="products/pad_d1spec.html">New product「D1 spec REAR INNER SHOE」</a></li>
+                  <li><a href="products/pad_compb_gym.html">New product「COMP-B for GYMKHANA REAR INNER SHOE」</a></li>
+                <li><a href="products/shoe_inner.html">New price「SPORTS INNER SHOE」</a></li>
+                <li><a href="products/pad_nplus.html">New product 「RACING-N+」</a></li>
+                <li><span style="color:#FC0; font-weight:bold;">Renaming 「RACING-N1」</span></li>
+                <li><span style="color:#FC0; font-weight:bold;">Renaming 「RACING-N1 FFR」</span></li>
+            <li><span style="color:#FC0; font-weight:bold;">「BOOM EVO」、「LEVEL MAX700」、「LEVEL MAX900i」were discontinued.</span></li>
+                <li><a href="products/pad_d1specex.html">"D1 spec EXTREME"</a> for AE86 and JZX100.</li>
+              <li>Brake pads「<a href="products/pad_bestop.html">BESTOP</a>」price down!<br />
+              FRONT：\9,800→\7,800<br />REAR：\8,800→\6,800</li>
+            <li style="color:#fff;">We would like to sincerely express our deepest condolences regarding this very tragic earthquake to the Tohoku district.<br />
+                  <span style="font-size:small; font-weight:bold; color:#FC0">*Our company information.</span><br />
+                  We are operating our business as usual, however, it may delay our service due to carrier situation. Please be understanding.</li>
+                <li><a href="../campaign/2011/2011_03.jpg" rel="colorbox">Mar.15～Jun.15 FRONT+REAR brake pads set campaign!</a></li>
+                <li>"<a href="products/pad_d1specex.html">D1 spec EXTREME</a>" for drifting</li>
+            	<li>"<a href="products/pad_kart_sts.html">STS</a>" and "<a href="products/pad_kart_cch.html">CCH</a>" are new compounds for RACING KART</li>
+				<li>The names of brake pads for RACING KART were changed.<br />"STANDARD" → "<a href="products/pad_kart_std.html">STD</a>"  "CARBON CERAMIC" → "<a href="products/pad_kart_ccs.html">CCS</a>"</li>
+                <li>TEFLON BRAKE LINE for VOXY　(ZZR70W・ZZR75W)</li>
+				<li>TEFLON BRAKE LINE for NOAH　(ZZR70W・ZZR75W)</li>
+				<li>TEFLON BRAKE LINE for HIACE　(200)</li>
+				<li>TEFLON BRAKE LINE for STEPWGN　(RF3・RF4・RF5・RF6・RF7・RF8)</li>
+                <li>TEFLON BRAKE LINE for MOVE　(L175S)</li>
+                <li>TEFLON BRAKE LINE for MOVE CONTE　(L575S)</li>
+                <li>TEFLON BRAKE LINE for MIRA　(L275S)</li>
+                <li>TEFLON BRAKE LINE for MIRA COCOA　(L575S)</li>
+                <li>TEFLON BRAKE LINE for TANTO　(L375S)</li>
+                <li>TEFLON BRAKE LINE for TANTO EXE　(L455S)</li>
+                <li>SCR Pure Plus6 for CR-Z (ZF-1)</li>
+                <li>TEFLON BRAKE LINE for ALPHARD　(ANH20W・ANH25W・GGH20W・GGH25W)</li>
+                <li>TEFLON BRAKE LINE for VELL FIRE (ANH20W・ANH25W・GGH20W・GGH25W)</li>
+                <li>TEFLON BRAKE LINE for VOXY　(AZR60G・AZR65G)</li>
+                <li>TEFLON BRAKE LINE for ESTIMA　(ACR50W・ACR55W・GSR50W・GSR55W)</li>
+                <li>TEFLON BRAKE LINE for SKYLINE　(V36・PV36・KV36・CKV36)</li>
+                <li>TEFLON BRAKE LINE for FAIRLADY Z　(Z34・HZ34)</li>
+                <li>TEFLON BRAKE LINE for IMPREZA　(GRB・GRF・GVB)</li>
+            </ul>
+            -->
+
+
+
+
+
+
+
+            <div class="movie_area clearfix" style="margin-top:0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AZFldGkKWlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!--ムービーエリアここから-->
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/i2YliRkDV-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div><!--ムービーエリアここまで-->
+        </div>
+        
+
+
+
+
+        <div id="contents_right">
+        	<div class="center">
+                <a href="https://www.pmu-racing.com/" target="_blank"><img class="moto_banner" src="img/moto_banner.jpg" alt="P.MU RACING"></a><br><br>
+                <span class="info1000" >
+                    <img class="logo1000 logo_footer" src="img/logo1000.png">
+                    <h3>Contact person: Alexey Lomakin </h3>
+                    <p> 4a, Sakhalinskaya st, Vladivostok, Russia<br>
+                        92a, Russkaya st, Vladivostok, Russia       
+                    </p>
+                    <p class="contact1000">
+                        Mob. : +79146510375<br>
+                        Tel : +7-423-202-52-52<br>
+                        Mail : avtomag.1000@mail.ru<br>
+                        <a class="url1000" href="www.wheel1000size.ru">URL : www.wheel1000size.ru</a>
+                    </p>
+                </span>
+            
+            </div>
+            <!--
+            <div id="result_area">
+                <h2><img src="../images/top_title_result_en.gif" alt="SUPER GT サポートチーム　レースリザルト" /></h2>
+                    <h3>2012　SUPER GT　Rd.1 OKAYAMA</h3>
+                    <dl>
+                        <dt>GT500 Class</dt>
+			<dd>1位 38 ZENT CERUMO SC430</dd>
+                        <dt>GT300 Class</dt>
+                        <dd>3位 0 GSR 初音ミク BMW<br />
+4位 15 ART TASTE PORSCHE<br />
+6位 43 ARTA Garaiya<br />
+8位 30 IWASAKI MODAクロコ apr R8<br />
+9位 21 ZENT Audi R8 LMS<br />
+12位 52 GREEN TEC & LEON SLS<br />
+15位 4 GSR ProjectMirai BMW<br />
+18位 20 Racerbook Audi R8 LMS<br />
+20位 5 マッハGoGoGo車検Ferrari458</dd>
+                    </dl>
+            </div>
+            -->
+          <div style="text-align:center;">
+            	<a class="footer_button" href="http://1000size.ru/" target="_blank">перейти на сайт 1000 размеров</a>
+            </div>
+        </div>
+      <div class="clear" style="height:50px; width:100%;"></div><!-- #BeginLibraryItem "/Library/footer_top_en.lbi" -->
+<div id="footer_top" class="clearfix">
+		<div id="footer_menu">
+	    	<div id="footer_menu_left" class="clearfix">
+            <p>Copyright (C) 2012 Project Mu Co.,Ltd. All Rights Reserved.</p>
+	    	</div>
+			<div id="footer_menu_logo">
+			    &nbsp;
+	    	</div>
+		</div>
+	</div><!-- #EndLibraryItem --></div>
+</div>
+
+
+
+</body>
+</html>
