@@ -370,7 +370,7 @@ a[x-apple-data-detectors=true] {
                     <div class="">
 	<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"><![endif]-->
 	<div style="color:#555555;font-family:'Ubuntu', Tahoma, Verdana, Segoe, sans-serif;line-height:120%; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">
-		<div style="font-size:12px;line-height:14px;font-family:Ubuntu, Tahoma, Verdana, Segoe, sans-serif;color:#555555;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px"><span style="color: rgb(153, 153, 153); font-size: 12px; line-height: 14px;">Отправлено с <a style="color:#0068A5;text-decoration: underline;" href="//Project-Mu.ru" target="_blank" rel="noopener">Project-Mu.ru</a></span></p></div>
+		<div style="font-size:12px;line-height:14px;font-family:Ubuntu, Tahoma, Verdana, Segoe, sans-serif;color:#555555;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px"><span style="color: rgb(153, 153, 153); font-size: 12px; line-height: 14px;">Отправлено с <a style="color:#0068A5;text-decoration: underline;" href="//prurussia.com" target="_blank" rel="noopener">prurussia.com</a></span></p></div>
 	</div>
 	<!--[if mso]></td></tr></table><![endif]-->
 </div>
