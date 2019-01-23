@@ -27,11 +27,11 @@ $mail->Password = 'secret';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->setFrom('noreply@prurussia.com', 'Project mu Russia');
+$mail->setFrom('noreply@pmurussia.com', 'Project mu Russia');
 $mail->addAddress('april504@yandex.ru');
 $mail->addAddress('avtomag.1000@mail.ru');
 $mail->addAddress('sukhobokov1000size@gmail.com');
-$mail->addAddress('info@prurussia.com'); // Add a recipient
+$mail->addAddress('info@pmurussia.com'); // Add a recipient
 
 
 // $mail->addAddress('example@example.com');
@@ -43,7 +43,7 @@ ob_start();
 require('./template.php');
 $template = ob_get_clean();
 
-$mail->Subject = 'Сообщение с prurussia.com: '.$subj;
+$mail->Subject = 'Сообщение с pmurussia.com: '.$subj;
 $mail->Body    = $template;
 
 $mail->AltBody = "Новое сообщение!\n
