@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="./css/import.css" type="text/css" media="screen,print">
 <link rel="stylesheet" href="./css/lightbox.css" type="text/css" media="screen">
 <!--モーダルボックス用ここから-->
-<link type="text/css" media="screen" rel="stylesheet" href="./css/colorbox.css">  
+<link type="text/css" media="screen" rel="stylesheet" href="./css/colorbox.css">
 
 
 <script
@@ -17,41 +17,33 @@
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/jquery.colorbox.js"></script>
 <!-- <link type="text/css" media="screen" rel="stylesheet" href="./css/colorbox-custom.css">   -->
-<!--[if IE]>  
-    <link type="text/css" media="screen" rel="stylesheet" href="colorbox-custom-ie.css" title="example" />  
-<![endif]-->  
+<!--[if IE]>
+    <link type="text/css" media="screen" rel="stylesheet" href="colorbox-custom-ie.css" title="example" />
+<![endif]-->
 
-<script type="text/javascript">  
-    $(document).ready(function(){  
-        // $("a[rel='colorbox']").colorbox();
-		// $.fn.colorbox.settings.bgOpacity = "0.5";  
-        // $(".cpModal").colorbox();  
-        // $("#flash").colorbox({contentAjax:"../content/flash.html"});  
-        // $(".inline1").colorbox({width:"940px", inline:true, href:"#inline_1"});
-		// $(".inline2").colorbox({width:"800px", inline:true, href:"#inline_2"});
-		// $(".inline3").colorbox({width:"800px", inline:true, href:"#inline_3"});
-		// $(".inline4").colorbox({width:"800px", inline:true, href:"#inline_4"});
-		// $(".inline5").colorbox({width:"800px", inline:true, href:"#inline_5"});
-		// $(".inline6").colorbox({width:"800px", inline:true, href:"#inline_6"});
-        // $(".inline7").colorbox({width:"800px", inline:true, href:"#inline_7"});
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        //open popup
         $(".cta__button").colorbox({
             inline:true,
             close: "&times;"
-        });  
+        });
+
         //form submission
         $('#contact_form').submit(function(e){
-        e.preventDefault();
-        var payload = $(this).serialize();
-        $.post('/mail/sendmail.php', payload).then(function(res){
-            console.log(res);
-            var data = JSON.parse(res);
-            $('.form-content').addClass('hidden');
-            $('.form-status__title').text(data.message);
-        }, function(err){
-            console.log(err);
+          e.preventDefault();
+          var payload = $(this).serialize();
+          $.post('/mail/sendmail.php', payload).then(function(res){
+              console.log(res);
+              var data = JSON.parse(res);
+              $('.form-content').addClass('hidden');
+              $('.form-status__title').text(data.message);
+          }, function(err){
+              console.log(err);
+          });
         });
-        });  
-    });  
+    });
 </script>
 <!--モーダルボックス用ここまで-->
 <title>Project Mu Co., Ltd.</title>
@@ -66,19 +58,19 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-NLSLS8D');</script>
         <!-- End Google Tag Manager -->
-        
-        
+
+
 </head>
 
-<body style="background: none;"> 
-    
-    
+<body style="background: none;">
+
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLSLS8D"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-    
+
+
 
 
         <div style="display:none; position:relative;">
@@ -91,29 +83,29 @@
                     <textarea name="message" rows="8" cols="80" class="cf_input" placeholder="Текст сообщения" required></textarea>
                     <button type="submit" class="cf_submit">Отправить</button>
                   </div>
-              
+
                   <h3 class="form-status__title"></h3>
-              
+
                 </form>
               </div>
 <div id="top_header_menu_wrapper">
     <div id="top_header_menu" class="clearfix"><!-- #BeginLibraryItem "/Library/head_menu_en.lbi" --><div id="lang_area" class="clearfix">
-        
-        
+
+
         <!-- верхнее меню -->
 
 
 
 
 
-        
-        
-        
-        
-        
+
+
+
+
+
         <!-- <ul>
 
-				<li id="lang_asia"><a href="http://www.pmuasia.com/" target="_blank">For Asia market</a></li>          
+				<li id="lang_asia"><a href="http://www.pmuasia.com/" target="_blank">For Asia market</a></li>
 				<li id="lang_au"><a href="http://www.project-mu.com.au/en/" target="_blank">For Australia market</a></li>
                 <li id="lang_usa"><a href="https://www.project-mu.co.jp/usa/index.html">For USA market</a></li>
                 <li id="lang_en"><a href="https://www.project-mu.co.jp/en/index.html">ENGLISH</a></li>
@@ -172,7 +164,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="mordalbox_pad_category_set">
                     <!--ストリート-->
                     <h3><img src="./img/mordalbox_title_street.gif" alt="STREET"></h3>
@@ -213,7 +205,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!--ストリートスポーツ-->
                 <div class="mordalbox_pad_category_set">
                 	<h3><img src="./img/mordalbox_title_streetsports.gif" alt="STREET SPORTS"></h3>
@@ -240,7 +232,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!--コンペティション-->
                 <div class="mordalbox_pad_category_set" style="float: left;">
                 	<h3><img src="./img/mordalbox_title_drift.gif" alt="COMPETITION"></h3>
@@ -253,7 +245,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!--シュー-->
                 <div class="mordalbox_pad_category_set" style="float:left;">
                 	<h3><img src="./img/mordalbox_title_shoe.gif" alt="SHOE"></h3>
@@ -265,9 +257,9 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="clear"></div>
-                
+
                 <!--インポート-->
                 <div class="mordalbox_pad_category_set" style="float:left;">
                 	<h3><img src="./img/mordalbox_title_importcar.gif" alt="for IMPORT CARS"></h3>
@@ -279,7 +271,7 @@
                         </ul>
                     </div>
                 </div>
-                                
+
                 <!--レーシング-->
                 <div class="mordalbox_pad_category_set" style="float:left;">
                 	<h3><img src="./img/mordalbox_title_circuitrace.gif" alt="RACING"></h3>
@@ -296,7 +288,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!--レーシングエキスポート-->
                 <div class="mordalbox_pad_category_set" style="float:left;">
                 	<h3><img src="./img/mordalbox_title_circuitrace_ex_en.gif" alt="RACING (Export only model"></h3>
@@ -307,9 +299,9 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="clear"></div>
-                
+
                 <!--カート用-->
 				<div class="mordalbox_pad_category_set" style="float:left;">
                 	<h3><img src="./img/mordalbox_title_kart_en.gif" alt="for KART"></h3>
@@ -322,7 +314,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!--バイク用-->
                 <div class="mordalbox_pad_category_set" style="float:left;">
                 	<h3><img src="./img/mordalbox_title_bike_en.gif" alt="for BIKE"></h3>
@@ -332,7 +324,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!--インポートキャリパー用-->
                 <div class="mordalbox_pad_category_set" style="float:left;">
                 	<h3><img src="./img/mordalbox_title_importcaliper_en.gif" alt="for IMPORT CALIPER"></h3>
@@ -342,13 +334,13 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="clear"></div>
-                
+
             </div>
-            
-            
-            
+
+
+
           <div id="inline_2" class="clearfix" style="padding:30px; background:#ffffff;"><!--ブレーキローター用-->
             	<h2>BRAKE ROTOR LINEUP</h2>
                 	<div class="mordalbox_category_sub_wrapper" style="border:none;">
@@ -387,7 +379,7 @@
                         <li><a href="https://www.project-mu.co.jp/en/products/cali_r6.html"><img src="./img/thumb_pindex_cali_r6_en.gif"><br>RACING CALIPER 6Pistons</a></li>
                         <li><a href="https://www.project-mu.co.jp/en/products/cali_r4x4.html"><img src="./img/thumb_pindex_cali_r4x4_en.gif"><br>RACING CALIPER 4Pistons×4Pads</a></li>
                         <li><a href="https://www.project-mu.co.jp/en/products/cali_f2rear.html"><img src="./img/thumb_pindex_cali_r2rear.gif"><br>RACING CALIPER 2Pistons REAR</a></li>
-                    </ul> 
+                    </ul>
                 </div>
                 <div class="mordalbox_category_sub_wrapper" style="border:none;">
                 	<h4><img src="./img/product_index_cat_sub_cali_forged.gif" alt="FORGED SPORTS CALIPER SERIES"></h4>
@@ -398,7 +390,7 @@
                         <li><a href="https://www.project-mu.co.jp/en/products/cali_f4slim.html"><img src="./img/thumb_pindex_cali_f4slim_en.gif"><br>FORGED SPORTS CALIPER 4Pistons SLIM</a></li>
                         <li><a href="https://www.project-mu.co.jp/en/products/cali_f4mini.html"><img src="./img/thumb_pindex_cali_f4mini.gif"><br>FORGED SPORTS CALIPER 4Pistons MINI</a></li>
                         <li><a href="https://www.project-mu.co.jp/en/products/cali_f4x4side.html"><img src="./img/thumb_pindex_cali_side.gif"><br>FORGED SPORTS CALIPER 4Pistons×4Pads SIDE-B</a></li>
-                    </ul> 
+                    </ul>
                 </div>
           </div>
           <div id="inline_4" class="clearfix" style="padding:30px; background:#ffffff;"><!--ブレーキライン用-->
@@ -498,7 +490,7 @@
                <iframe width="560" height="315" src="https://www.youtube.com/embed/i2YliRkDV-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div><!--ムービーエリアここまで-->
         </div>
-        
+
 
 
 
@@ -510,7 +502,7 @@
                     <img class="logo_footer" src="img/logo1000pmu.png">
                     <h3>Contact person: Alexey Lomakin </h3>
                     <p class="address"> 4a, Sakhalinskaya st, Vladivostok, Russia<br>
-                        92a, Russkaya st, Vladivostok, Russia       
+                        92a, Russkaya st, Vladivostok, Russia
                     </p>
                     <p class="contact1000">
                         Mob. : +79146510375<br>
@@ -519,7 +511,7 @@
                         <a class="url1000" href="https://wheel1000size.ru" target="_blank">URL : www.wheel1000size.ru</a>
                     </p>
                 </span>
-            
+
             </div>
             <!--
             <div id="result_area">
