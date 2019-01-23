@@ -1196,7 +1196,7 @@ line-height: 2.0;
 	padding: 0 0 20px 0;
 }
 
-* html #contents_right { 
+* html #contents_right {
 position: absolute;
 top: 20px;
 right: 0;
@@ -1433,11 +1433,11 @@ margin: 0;
 padding: 0 0 10px 0;
 }
 
-* html div.product_index_set a { 
+* html div.product_index_set a {
 float: left;
 }
 
-*+html div.product_index_set a { 
+*+html div.product_index_set a {
 float: left;
 }
 
@@ -2839,8 +2839,8 @@ padding: 0;
 	border: 10px solid #28aba7;
 	background-color: #019e97;
 	text-align: center;
-	
-	
+
+
 }
 .logo_jp {
 	width: 100px;
@@ -2949,8 +2949,10 @@ form#contact_form {
     padding: 16px 32px 0;
     transition: all .3s ease;
     position: relative;
-	margin: 0 auto;
-	padding-bottom: 30px;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		box-sizing: border-box;
+		height: 100%;
 }
 
 .cf_input {
@@ -2991,7 +2993,7 @@ button.cf_submit {
     cursor: pointer;
     transition: all .3s ease;
 	width: 100%;
-	
+
 }
 
 button.cf_submit:hover {
