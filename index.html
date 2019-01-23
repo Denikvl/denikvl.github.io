@@ -33,6 +33,7 @@
         //form submission
         $('#contact_form').submit(function(e){
           e.preventDefault();
+          dataLayer.push({'event': 'zayavka'});
           var payload = $(this).serialize();
           $.post('/mail/sendmail.php', payload).then(function(res){
               console.log(res);
