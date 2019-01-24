@@ -28,7 +28,7 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->setFrom('noreply@pmurussia.com', 'Project mu Russia');
-$mail->addAddress('april504@yandex.ru');
+// $mail->addAddress('april504@yandex.ru');
 $mail->addAddress('avtomag.1000@mail.ru');
 $mail->addAddress('sukhobokov1000size@gmail.com');
 $mail->addAddress('info@pmurussia.com'); // Add a recipient
