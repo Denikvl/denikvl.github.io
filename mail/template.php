@@ -254,7 +254,7 @@ a[x-apple-data-detectors=true] {
 	<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"><![endif]-->
 	<div style="color:#555555;line-height:120%;font-family:'Ubuntu', Tahoma, Verdana, Segoe, sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">
 		<div style="font-size:12px;line-height:14px;font-family:Ubuntu, Tahoma, Verdana, Segoe, sans-serif;color:#555555;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px"><span style="font-size: 16px; line-height: 19px;">
-      <?php echo $name ?> <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
+      <?php echo $name ?> <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a> <br>тел: <a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
     </span></p></div>
 	</div>
 	<!--[if mso]></td></tr></table><![endif]-->

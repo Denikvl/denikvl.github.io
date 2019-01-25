@@ -6,11 +6,11 @@ error_reporting(~E_NOTICE);
 
 require 'PHPMailerAutoload.php';
 
-$name 	= $_POST['name'];
-$email 	= $_POST['email'];
-$subj 	= $_POST['subj'];
-$message 	= $_POST['message'];
-// $number = $_POST['number'];
+$name 	 = $_POST['name'];
+$email 	 = $_POST['email'];
+$subj 	 = $_POST['subj'];
+$message = $_POST['message'];
+$phone  = $_POST['phone'];
 // $prod 	= $_POST['product'];
 
 $mail = new PHPMailer;
@@ -28,7 +28,7 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->setFrom('noreply@pmurussia.com', 'Project mu Russia');
-// $mail->addAddress('april504@yandex.ru');
+$mail->addAddress('april504@yandex.ru');
 $mail->addAddress('avtomag.1000@mail.ru');
 $mail->addAddress('sukhobokov1000size@gmail.com');
 $mail->addAddress('info@pmurussia.com'); // Add a recipient
@@ -49,6 +49,7 @@ $mail->Body    = $template;
 $mail->AltBody = "Новое сообщение!\n
                   От: $name\n
                   Email: $email\n
+                  Телефон: $phone\n
                   Тема: $subj\n
                   Сообщение:\n$message";
 
