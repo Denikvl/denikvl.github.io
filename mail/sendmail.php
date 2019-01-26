@@ -9,11 +9,22 @@ ini_set("error_log", "/logs/error.log");
 require 'PHPMailerAutoload.php';
 
 $name 	 = $_POST['name'] ?: '';
-$email 	 = $_POST['email'] ?: '';
+$email 	 = $_POST['email'];
+$phone   = $_POST['phone'];
 $subj 	 = $_POST['subj' ?: ''];
 $message = $_POST['message'] ?: '';
-$phone  = $_POST['phone'] ?: '';
-// $prod 	= $_POST['product'];
+
+
+//we don't need mail with no contacts
+if (empty($email) && empty($phone)) {
+  echo json_encode([
+    "message" => "Нет контактных данных",
+    "status" => "error",
+  ], JSON_UNESCAPED_UNICODE);
+
+  return;
+}
+
 
 $mail = new PHPMailer;
 
