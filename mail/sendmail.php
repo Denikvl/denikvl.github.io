@@ -3,6 +3,8 @@
 // header('Content-type:application/json;charset=utf-8');
 
 error_reporting(~E_NOTICE);
+ini_set("log_errors", 1);
+ini_set("error_log", "/logs/error.log");
 
 require 'PHPMailerAutoload.php';
 
