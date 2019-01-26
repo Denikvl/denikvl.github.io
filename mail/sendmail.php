@@ -8,11 +8,11 @@ ini_set("error_log", "/logs/error.log");
 
 require 'PHPMailerAutoload.php';
 
-$name 	 = $_POST['name'];
-$email 	 = $_POST['email'];
-$subj 	 = $_POST['subj'];
-$message = $_POST['message'];
-$phone  = $_POST['phone'];
+$name 	 = $_POST['name'] ?: '';
+$email 	 = $_POST['email'] ?: '';
+$subj 	 = $_POST['subj' ?: ''];
+$message = $_POST['message'] ?: '';
+$phone  = $_POST['phone'] ?: '';
 // $prod 	= $_POST['product'];
 
 $mail = new PHPMailer;
