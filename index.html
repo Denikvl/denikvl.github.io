@@ -44,7 +44,45 @@
               console.log(err);
           });
         });
+
+        $('#banner_pad').click(function(){
+          dataLayer.push({'event': 'brakepad'});
+        });
+
+        $('#banner_rotor').click(function(){
+          dataLayer.push({'event': 'brakerotor'});
+        });
+
+        $('#banner_caliper').click(function(){
+          dataLayer.push({'event': 'brakecaliper'});
+        });
+
+        $('#banner_line').click(function(){
+          dataLayer.push({'event': 'brakeline'});
+        });
+
+        $('#banner_fluid').click(function(){
+          dataLayer.push({'event': 'brakefluid'});
+        });
+
+        $('#banner_accessories').click(function(){
+          dataLayer.push({'event': 'accesories'});
+        });
+
+        $('#banner_powerup').click(function(){
+          dataLayer.push({'event': 'puparts'});
+        });
+
+        $('.moto_banner').click(function(){
+          dataLayer.push({'event': 'nproject'});
+        });
+
+        $('.footer_button').click(function(){
+          dataLayer.push({'event': '1000size'});
+        });
+
     });
+
 </script>
 <!--モーダルボックス用ここまで-->
 <title>Project Mu Co., Ltd.</title>
@@ -144,13 +182,13 @@
                 </a>
                 </li>
 
-                <li><a class="" href="https://www.project-mu.co.jp/en/products/index.html" target="_blank"> <img src="./img/top_product_pad_en.jpg" alt="BRAKE PAD" width="220" height="250" ></a></li>
-                <li><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_rotor" target="_blank"><img src="./img/top_product_rotor_en.jpg" alt="BRAKE ROTOR" width="220" height="250"></a></li>
-                <li class="non_padding"><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_cali" target="_blank"><img src="./img/top_product_caliper_en.jpg" alt="BRAKE CALIPER" width="220" height="250"></a></li>
-                <li><a href="https://www.project-mu.co.jp/en/products/other_brakeline.html" target="_blank"><img src="./img/top_product_line_en.jpg" alt="BRAKE LINE" width="220" height="250"></a></li>
-                <li><a href="https://www.project-mu.co.jp/en/products/other_fluid.html" target="_blank"><img src="./img/top_product_fluid_en.jpg" alt="BRAKE FLUID" width="220" height="250"></a></li>
-                <li><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_acce" target="_blank"><img src="./img/top_product_acce_en.jpg" alt="ACCESSORIES" width="220" height="250"></a></li>
-                <li class="non_padding"><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_powerup" target="_blank"><img src="./img/top_product_powerup_en.jpg" alt="POWER UP PARTS" width="220" height="250"></a></li>
+                <li><a class="" id="banner_pad" href="https://www.project-mu.co.jp/en/products/index.html" target="_blank"> <img src="./img/top_product_pad_en.jpg" alt="BRAKE PAD" width="220" height="250" ></a></li>
+                <li><a class="" id="banner_rotor" href="https://www.project-mu.co.jp/en/products/index.html#pindex_rotor" target="_blank"><img src="./img/top_product_rotor_en.jpg" alt="BRAKE ROTOR" width="220" height="250"></a></li>
+                <li class="non_padding" id="banner_caliper" ><a class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_cali" target="_blank"><img src="./img/top_product_caliper_en.jpg" alt="BRAKE CALIPER" width="220" height="250"></a></li>
+                <li><a id="banner_line" href="https://www.project-mu.co.jp/en/products/other_brakeline.html" target="_blank"><img src="./img/top_product_line_en.jpg" alt="BRAKE LINE" width="220" height="250"></a></li>
+                <li><a id="banner_fluid" href="https://www.project-mu.co.jp/en/products/other_fluid.html" target="_blank"><img src="./img/top_product_fluid_en.jpg" alt="BRAKE FLUID" width="220" height="250"></a></li>
+                <li><a id="banner_accessories" class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_acce" target="_blank"><img src="./img/top_product_acce_en.jpg" alt="ACCESSORIES" width="220" height="250"></a></li>
+                <li class="non_padding"><a id="banner_powerup" class="" href="https://www.project-mu.co.jp/en/products/index.html#pindex_powerup" target="_blank"><img src="./img/top_product_powerup_en.jpg" alt="POWER UP PARTS" width="220" height="250"></a></li>
             </ul>
         </div>
         <!--モーダルボックスの内容ここから-->
